@@ -1,4 +1,5 @@
 # Abbreviations
+
 abbr -a gst "git status"
 abbr -a gad "git add"
 abbr -a gch "git checkout"
@@ -11,14 +12,18 @@ set -g theme_display_virtualenv yes
 set -g theme_display_user ssh
 set -g theme_display_host ssh
 set -g theme_display_git_master_branch yes
-set -g theme_powerline_fonts yes
+set -g theme_powerline_fonts no
 set -g theme_nerd_fonts no
 set -g fish_prompt_pwd_dir_length 0
 set -g theme_use_abbreviated_branch_names no
 set -g theme_newline_cursor yes
+set -g theme_color_scheme dracula
 
 # Aliases
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+
+# gcloud
+if [ -f '/Users/raymondmogg/google-cloud-sdk/path.fish.inc' ]; . '/Users/raymondmogg/google-cloud-sdk/path.fish.inc'; end
 
 # Custom Greeting
 function fish_greeting
