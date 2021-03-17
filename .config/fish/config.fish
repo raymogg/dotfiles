@@ -25,6 +25,12 @@ alias config="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
 # gcloud
 if [ -f '/Users/raymondmogg/google-cloud-sdk/path.fish.inc' ]; . '/Users/raymondmogg/google-cloud-sdk/path.fish.inc'; end
 
+# Cargo
+set PATH $HOME/.cargo/bin $PATH
+
+# Chia
+set PATH /Applications/Chia.app/Contents/Resources/app.asar.unpacked/daemon $PATH
+
 # Custom Greeting
 function fish_greeting
 	echo
